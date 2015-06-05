@@ -11,6 +11,7 @@ Barebone NodeJS project for any multiplayer games.
 - Clone the source code from Github
 - Run `npm install` to install needed packages
 - Writing your code in `server/server.js` and `client/js/game.js`
+- Run your game server with `npm start` command
 
 ## Server side
 You can write all the server side code in `server/server.js`
