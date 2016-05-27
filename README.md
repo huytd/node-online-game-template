@@ -2,6 +2,12 @@
 
 Barebone NodeJS project for any multiplayer games.
 
+---
+
+**UPDATE:** I developed a [lightweight alternative for Socket.IO](https://github.com/huytd/lit), based on Engine.IO, the engine behind Socket.IO as well. It focus on transmiting binary data instead of string-based as in Socket.IO, so the target is to improve the networking performance. Unfortunatelly, I didn't have time for testing/integrating it yet. It would be nice if somebody can help me integrate it with this repo? Feel free to contact me for further discussion. Thank you so much!
+
+---
+
 ## Requirements
 - NodeJS / NPM
 - Socket.IO
