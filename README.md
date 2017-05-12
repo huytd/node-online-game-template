@@ -29,7 +29,7 @@ io.on('connection', function (socket) {
 });
 ```
 
-## Client slide
+## Client side
 For writing client side code, find `client/js/game.js`
 
 There are 3 method to process your client logic: `handleNetwork`, `handleLogic` and `handleGraphics`
