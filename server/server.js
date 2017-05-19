@@ -1,18 +1,17 @@
-var express = require('express');
-var app     = express();
-var http    = require('http').Server(app);
-var io      = require('socket.io')(http);
+express = require('express')
+app = express()
+http = require('http').Server(app)
+io = require('socket.io')(http)
+config = require('./config.json')
+app.use express.static(__dirname + '/../client')
 
-var config  = require('./config.json');
+io.on 'connection', (socket) ->
+  console.log 'Somebody connected!'
+  # Write your code here
+  return
 
-app.use(express.static(__dirname + '/../client'));
+  serverPort = process.env.PORT or config.port
 
-io.on('connection', function (socket) {
-  console.log("Somebody connected!");
-  // Write your code here
-});
-
-var serverPort = process.env.PORT || config.port;
-http.listen(serverPort, function() {
-  console.log("Server is listening on port " + serverPort);
-});
+http.listen serverPort, ->
+  console.log 'Server is listening on port ' + serverPort
+  return
